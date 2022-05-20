@@ -19,7 +19,7 @@ function MarginModule(){
             <ModuleTemplate 
             icon={<FaChartBar size={24}/>} 
             title='Margin Trading' 
-            button={<CustomSecondaryButton> <FaPlus size={14}/> Open new account</CustomSecondaryButton>}
+            button={<CustomSecondaryButton> <FaPlus size={14}/> <span className="btn-fold"> Open new account</span></CustomSecondaryButton>}
             onboardingTitle ='Open new Margin account!'
             onboardingTagline ='You can open additional Margin accounts USDC, ETH, USDT in  and other currencies'
             onboardingAction='New account'
@@ -29,9 +29,9 @@ function MarginModule(){
                 <tr>
                     <th>Account</th>
                     <th>Equity</th>
-                    <th>Open P/L</th>
-                    <th>Available margin, % </th>
-                    <th>Info</th>
+                    <th className="td-fold">Open P/L</th>
+                    <th className="td-fold">Available margin, % </th>
+                    <th className="td-fold">Info</th>
                 </tr>
                 {accounts.map((accountItem)=>  <tr>
                     <td>
@@ -43,15 +43,15 @@ function MarginModule(){
                         <div className="td-currency-unit">{accountItem.balance} {accountItem.unit}</div>
                         <div>≈ 0 USD</div>
                     </td>
-                    <td>
+                    <td className="td-fold">
                         <div className="td-currency-unit">{accountItem.balance} {accountItem.unit}</div>
                         <div>≈ 0 USD</div>
                     </td>
-                    <td>
+                    <td className="td-fold">
                         <div className="td-currency-unit">{accountItem.margin}%</div>
                     </td>
-                    <td className="td-currency-unit">—</td>
-                    <td className="td-currency-actions">
+                    <td className="td-currency-unit td-fold">—</td>
+                    <td className="td-currency-actions td-fold">
                         <div className="div-currency-actions">
                             <CustomPrimaryButton>Deposite</CustomPrimaryButton>
                             <CustomSecondaryButton>Trade</CustomSecondaryButton>

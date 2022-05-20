@@ -9,7 +9,7 @@ function ContestsModule(){
             <ModuleTemplate 
             icon={<FaAward size={24}/>} 
             title='Contests ' 
-            button={<CustomSecondaryButton> <FaPlus size={14}/> Join contest</CustomSecondaryButton>}
+            button={<CustomSecondaryButton> <FaPlus size={14}/> <span className="btn-fold">Join contest</span></CustomSecondaryButton>}
             onboardingTitle ='Join Contest &amp; Win $$!'
             onboardingTagline ='Free virtual funds are provided to all participants.'
             onboardingAction='Join now'

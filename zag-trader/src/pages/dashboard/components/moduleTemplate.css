@@ -155,3 +155,14 @@ th:nth-child(1) , td:nth-child(1){
     grid-auto-columns: min-content;
     grid-gap: 18px;
 }
+
+
+@media (max-width: 768px){
+    .td-fold{
+        display: none;
+    }
+    .btn-fold{
+        display: none;
+    }
+    
+}

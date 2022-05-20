@@ -49,7 +49,7 @@ function WalletModule(){
                 <tr>
                     <th>Currency</th>
                     <th>Balance</th>
-                    <th>Pending</th>
+                    <th className="td-fold">Pending</th>
                 </tr>
                 {wallet.map((currencyItem)=>  <tr>
                     <td>
@@ -61,8 +61,8 @@ function WalletModule(){
                         <div className="td-currency-unit">{currencyItem.balance} {currencyItem.unit}</div>
                         <div>≈ 0 USD</div>
                     </td>
-                    <td className="td-currency-unit">—</td>
-                    <td className="td-currency-actions">
+                    <td className="td-currency-unit td-fold" >—</td>
+                    <td className="td-currency-actions td-fold">
                         <div className="div-currency-actions">
                             <CustomPrimaryButton>Deposite</CustomPrimaryButton>
                             <CustomSecondaryButton>Withdraw</CustomSecondaryButton>
