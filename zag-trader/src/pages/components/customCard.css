@@ -19,6 +19,9 @@
     justify-content: space-between;
 }
 
+.customCard-header:hover{
+    color: #fff;
+}
 
 @media (min-width: 992px){
 .customCard-header {
