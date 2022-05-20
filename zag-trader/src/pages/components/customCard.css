@@ -15,9 +15,16 @@
     color: rgba(187, 196, 201, .85);
     line-height: 20px;
     font-weight: 400;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template: "header action" auto/minmax(auto,1fr) minmax(auto,1fr);
+}
+@media (min-width: 768px){
+    .customCard-header{
+        grid-template: "title summary action" auto/minmax(auto,1fr) auto minmax(auto,1fr);
+    }
 }
 
 .customCard-header:hover{
@@ -54,6 +61,11 @@
     .customCard-header-summery{
        display: block;
     }
+}
+
+.customCard-header-action{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .customCard-content{

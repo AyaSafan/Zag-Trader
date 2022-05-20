@@ -43,7 +43,7 @@ function WalletModule(){
             <ModuleTemplate 
             icon={<FaRegMoneyBillAlt size={24}/>} 
             title='Wallet' 
-            button={<div style={{width:100}}></div>}
+            button={<div></div>}
             >
                 <table>
                 <tr>
