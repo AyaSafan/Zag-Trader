@@ -28,7 +28,7 @@
 
 .customCard-header-title{
  display: flex;
- align-items:stretch;
+ align-self:center;
 }
 .customCard-header-title span{
     height: min-content;
