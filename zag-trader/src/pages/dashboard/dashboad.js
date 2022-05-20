@@ -1,8 +1,9 @@
 import './dashboard.css';
 import TotalFunds from './components/totalFunds';
 import Banner from './components/banner';
-import MarginModule from './components/Modules/marginModule';
-import YieldModule from './components/Modules/yieldModule';
+import MarginModule from './components/marginModule';
+import YieldModule from './components/yieldModule';
+import PortfolioModule from './components/portfolioModule';
 
 function Dashboard() {
     return (
@@ -11,7 +12,8 @@ function Dashboard() {
         <TotalFunds/>
         <Banner/>
         <MarginModule/>  
-        <YieldModule/>  
+        <YieldModule/> 
+        <PortfolioModule/> 
         </div>
     </body>
     );

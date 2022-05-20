@@ -1,5 +1,5 @@
 import './totalFunds.css'
-import CustomCard from "./customCard";
+import CustomCard from "../../components/customCard";
 import CustomPrimaryButton from "../../components/customPrimaryButton"
 import CustomSecondaryButton from '../../components/customSecondaryButton';
 import {FaInfoCircle}  from 'react-icons/fa';

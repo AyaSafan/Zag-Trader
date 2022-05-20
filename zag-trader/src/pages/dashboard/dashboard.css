@@ -13,9 +13,9 @@ body{
     "wallet" auto
     "margin" auto
     "yield" auto
-    "cov-top" auto
-    "cov-portfolio" auto
-    "cov-strategies" auto
+    "top" auto
+    "portfolio" auto
+    "strategies" auto
     /* "comps" auto/100%; */
 }
 
@@ -28,9 +28,9 @@ body{
             "wallet wallet" auto
             "margin margin" auto
             "yield yield" auto
-            "cov-top cov-top" auto
-            "cov-portfolio cov-portfolio" auto
-            "cov-strategies cov-strategies" auto
+            "top top" auto
+            "portfolio portfolio" auto
+            "strategies strategies" auto
             /* "comps comps" auto/1fr 1fr; */
     }
 }

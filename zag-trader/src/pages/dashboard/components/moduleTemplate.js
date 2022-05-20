@@ -1,9 +1,9 @@
 import './moduleTemplate.css'
 import { useState } from 'react';
 
-import CustomCard from '../customCard';
+import CustomCard from '../../components/customCard';
 import {FaAngleDown, FaTimes}  from 'react-icons/fa';
-import CustomPrimaryButton from '../../../components/customPrimaryButton';
+import CustomPrimaryButton from '../../components/customPrimaryButton';
 
 function ModuleTemplate(props){
     const [show, setShow] = useState(true);

@@ -1,6 +1,6 @@
 import ModuleTemplate from "./moduleTemplate";
 import {FaArtstation, FaPlus}  from 'react-icons/fa';
-import CustomSecondaryButton from "../../../components/customSecondaryButton";
+import CustomSecondaryButton from "../../components/customSecondaryButton";
 
 
 function YieldModule(){
