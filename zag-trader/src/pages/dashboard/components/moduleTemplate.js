@@ -2,7 +2,7 @@ import './moduleTemplate.css'
 import { useState } from 'react';
 
 import CustomCard from '../../components/customCard';
-import {FaAngleDown, FaTimes}  from 'react-icons/fa';
+import {FaAngleDown, FaAngleUp, FaTimes}  from 'react-icons/fa';
 import CustomPrimaryButton from '../../components/customPrimaryButton';
 
 function ModuleTemplate(props){
@@ -18,7 +18,7 @@ function ModuleTemplate(props){
     return(
         <CustomCard>
             <div className='customCard-header' > 
-                <div className='customCard-header-title' onClick={handleClick}> {props.icon} &nbsp; &nbsp; <span> {props.title}</span> &nbsp; <FaAngleDown size={24}/> </div>
+                <div className='customCard-header-title' onClick={handleClick}> {props.icon} &nbsp; &nbsp; <span> {props.title}</span> &nbsp; {show? <FaAngleDown size={24}/> : <FaAngleUp size={24}/>}  </div>
                 <div className='customCard-header-summery'> <div>Total equity</div> <div style={{color:'#fff'}}>≈ 0 USD</div></div>
                 {show && props.button}
             </div>
