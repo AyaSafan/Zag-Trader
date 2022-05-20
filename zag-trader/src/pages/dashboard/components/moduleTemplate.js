@@ -23,7 +23,7 @@ function ModuleTemplate(props){
                 {show && props.button}
             </div>
             {show && props.children}
-            {show && 
+            {show && props.onboardingTitle && 
             <div className="onboardingBanner">
                 <div className='onboardingBanner-pic' style={ {background:`url(${props.pic}) no-repeat`}}></div>
                 <div className="onboardingBanner-message">

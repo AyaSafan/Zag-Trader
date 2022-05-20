@@ -1,6 +1,7 @@
 import './dashboard.css';
 import TotalFunds from './components/totalFunds';
 import Banner from './components/banner';
+import WalletModule from './components/walletModule';
 import MarginModule from './components/marginModule';
 import YieldModule from './components/yieldModule';
 import PortfolioModule from './components/portfolioModule';
@@ -13,6 +14,7 @@ function Dashboard() {
         <div className ='dashboardGrid'>
         <TotalFunds/>
         <Banner/>
+        <WalletModule/>
         <MarginModule/>  
         <YieldModule/> 
         <PortfolioModule/> 
