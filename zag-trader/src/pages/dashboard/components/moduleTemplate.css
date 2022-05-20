@@ -102,18 +102,23 @@ table{
     font-size: 12px;
     line-height: 18px;
     border-collapse: collapse;
+    width: 100%;
 }
 
 
 tr{
     height: 36px;
-    text-align: left;
+    text-align: right;
     border-top: 1px solid rgba(255,255,255,.12);
     border-bottom: 0 none transparent;
 }
+tr:not(:first-child):hover {
+    cursor: pointer;
+    background-color: rgba(128,128,128,.12);
+}
 
 th{
-    text-align: left;
+    text-align: right;
     font-weight: 400;
     padding: 8px 10px;
 }
@@ -122,8 +127,8 @@ td{
     padding: 8px 10px;
 }
 
-th:nth-child(2) , td:nth-child(2){
-    text-align: right; 
+th:nth-child(1) , td:nth-child(1){
+    text-align: left; 
 }
 .td-currency-label{
     display: flex;
@@ -137,4 +142,16 @@ th:nth-child(2) , td:nth-child(2){
     color: #fff;
     font-weight: 500;
     font-size: 14px;
+}
+
+.td-currency-actions{
+    width: 1px;
+}
+
+.div-currency-actions{
+    flex-grow: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    grid-gap: 18px;
 }

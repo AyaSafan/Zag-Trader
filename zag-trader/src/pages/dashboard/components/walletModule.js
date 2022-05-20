@@ -1,5 +1,7 @@
 import ModuleTemplate from "./moduleTemplate";
 import {FaRegMoneyBillAlt}  from 'react-icons/fa';
+import CustomPrimaryButton from "../../components/customPrimaryButton";
+import CustomSecondaryButton from "../../components/customSecondaryButton";
 
 
 function WalletModule(){
@@ -21,6 +23,18 @@ function WalletModule(){
             currency:'Tether USD',
             unit:'TUSD',
             balance:0
+        },
+        {
+            currencyIcon:'	https://primexbt.com/my/assets/icons/currency/usdc.svg',
+            currency:' USD Coin ',
+            unit:'USDC',
+            balance:0
+        },
+        {
+            currencyIcon:'	https://primexbt.com/my/assets/icons/currency/cov.svg',
+            currency:'Covesting',
+            unit:'COV',
+            balance:0
         }
     ]
 
@@ -29,7 +43,7 @@ function WalletModule(){
             <ModuleTemplate 
             icon={<FaRegMoneyBillAlt size={24}/>} 
             title='Wallet' 
-            button={<div></div>}
+            button={<div style={{width:100}}></div>}
             >
                 <table>
                 <tr>
@@ -47,7 +61,13 @@ function WalletModule(){
                         <div className="td-currency-unit">{currencyItem.balance} {currencyItem.unit}</div>
                         <div>≈ 0 USD</div>
                     </td>
-                    <td>$100</td>
+                    <td className="td-currency-unit">—</td>
+                    <td className="td-currency-actions">
+                        <div className="div-currency-actions">
+                            <CustomPrimaryButton>Deposite</CustomPrimaryButton>
+                            <CustomSecondaryButton>Withdraw</CustomSecondaryButton>
+                        </div>
+                    </td>
                 </tr>
                 )}
 
