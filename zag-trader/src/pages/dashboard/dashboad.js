@@ -20,12 +20,16 @@ function Dashboard() {
                    <a href='/' className='mainmenu-logo-link'>
                     <img  className='mainmenu-logo-img' src='https://primexbt.com/my/assets/images/logo-mobile.svg' alt='logo'></img>
                    </a> 
-                   <div>
+                   <div className='mainmenu-summery'>
                        <div>
                        BTC/USD
                        </div>
                        <div>29,195.5 <span style={{color: 'red'}}>-3.64% </span> </div>
                    </div>
+                  
+                </div>
+                <div className='mobile-mainmenu-summery'>
+                      <p> BTC/USD 29,195.5 <span style={{color: 'red'}}>-3.64% </span></p>
                 </div>
                 <nav className='mainmenu-nav'>
                     <ul>
@@ -49,8 +53,15 @@ function Dashboard() {
                         <li><a href="/"><div><FaCreativeCommonsSa size={24}/> <div>Copy-trading</div></div></a></li>
                         <li><a href="/"><div><FaBars size={24}/> <div>More</div></div></a></li>
                     </ul>
+            </nav> 
+            <nav className='mobile-nav2'>
+                <a href='/' className='active'> Dashboard </a>
+                <a href='/'> Buy crypto </a>
+                <a href='/'> Promo codes </a>
+                <a href='/'> Referrels </a>
+                <a href='/'> Reports </a>
+                <a href='/'> Settings </a>
             </nav>
-            
             <div className ='dashboardGrid'>
             <TotalFunds/>
             <Banner/>
