@@ -13,6 +13,7 @@ function YieldModule(){
             onboardingTitle ='Earn up to 14% interest!'
             onboardingTagline ='Start earning high returns on your crypto with Covesting Yield Account.'
             onboardingAction='Start earning'
+            pic='https://primexbt.com/my/cov-yield.875d03a81a9cb1ce.png'
             >
             </ModuleTemplate>
         </div>

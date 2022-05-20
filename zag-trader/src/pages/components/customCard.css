@@ -28,7 +28,10 @@
 
 .customCard-header-title{
  display: flex;
- align-items:center;
+ align-items:stretch;
+}
+.customCard-header-title span{
+    height: min-content;
 }
 
 .customCard-header-title:hover{

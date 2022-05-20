@@ -13,6 +13,7 @@ function MarginModule(){
             onboardingTitle ='Open new Margin account!'
             onboardingTagline ='You can open additional Margin accounts USDC, ETH, USDT in  and other currencies'
             onboardingAction='New account'
+            pic='https://primexbt.com/my/margin-mobile.142711b20ff9c98d.svg'
             >
             </ModuleTemplate>
         </div>

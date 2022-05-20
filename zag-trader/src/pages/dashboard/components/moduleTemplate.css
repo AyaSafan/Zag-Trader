@@ -25,8 +25,7 @@
 
  
 .onboardingBanner-pic {
-    background: url(../../../assets/coin-small.svg) no-repeat;
-    background-size: auto 100%;
+    background-size: contain !important;
     height: 68px;
     width: 161px;
     position:absolute;
@@ -38,8 +37,7 @@
     .onboardingBanner-pic {
         height: 100px;
         width: 219px;
-        background: url(../../../assets/coin.svg) no-repeat;
-        background-size: auto 100%;
+        background-size: cover !important;
     }
   }
 
