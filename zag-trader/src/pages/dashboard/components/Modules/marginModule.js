@@ -1,13 +1,13 @@
 import ModuleTemplate from "./moduleTemplate";
-import {FaArtstation, FaPlus}  from 'react-icons/fa';
-import CustomSecondaryButton from "../../components/customSecondaryButton";
+import {FaChartBar, FaPlus}  from 'react-icons/fa';
+import CustomSecondaryButton from "../../../components/customSecondaryButton";
 
 
 function MarginModule(){
     return(
         <div style={{gridArea: 'margin'}}>
             <ModuleTemplate 
-            icon={<FaArtstation/>} 
+            icon={<FaChartBar size={24}/>} 
             title='Margin Trading' 
             button={<CustomSecondaryButton> <FaPlus size={14}/> Open new account</CustomSecondaryButton>}
             onboardingTitle ='Open new Margin account!'

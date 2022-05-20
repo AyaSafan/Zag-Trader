@@ -1,8 +1,8 @@
 import './dashboard.css';
 import TotalFunds from './components/totalFunds';
 import Banner from './components/banner';
-import MarginModule from './components/marginModule';
-import YieldModule from './components/yieldModule';
+import MarginModule from './components/Modules/marginModule';
+import YieldModule from './components/Modules/yieldModule';
 
 function Dashboard() {
     return (
