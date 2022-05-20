@@ -8,6 +8,7 @@ import PortfolioModule from './components/portfolioModule';
 import StratigesModule from './components/stratigesModule';
 import ContestsModule from './components/contestsModule';
 import TopNav from './components/topNav';
+import SideBar from './components/sideBar';
 
 
 
@@ -15,16 +16,9 @@ function Dashboard() {
     return (
     <body>
         <div>
-            <TopNav/>
-            
-            <nav className='mobile-nav2'>
-                <a href='/' className='active'> Dashboard </a>
-                <a href='/'> Buy crypto </a>
-                <a href='/'> Promo codes </a>
-                <a href='/'> Referrels </a>
-                <a href='/'> Reports </a>
-                <a href='/'> Settings </a>
-            </nav>
+            <TopNav/>            
+            <SideBar/>
+
             <div className ='dashboardGrid'>
             <TotalFunds/>
             <Banner/>

@@ -1,0 +1,35 @@
+
+.mobile-nav2{
+    display: none;
+}
+
+@media (max-width: 992px){
+
+    .mobile-nav2{
+        display: flex;
+        position: fixed;
+        z-index: 15;
+        top: 46px;
+        right: 0;
+        left: 0;
+        background: #2b2b3c;
+        border-top: 1px solid #303142;
+        border-bottom: 1px solid #303142; 
+        width: 100%;
+    }
+    .mobile-nav2 a{
+        color: #83838d;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+    }
+
+}
+
+.active {
+    color: #fff !important;
+  }
