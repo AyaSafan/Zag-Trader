@@ -4,6 +4,7 @@ import Banner from './components/banner';
 import MarginModule from './components/marginModule';
 import YieldModule from './components/yieldModule';
 import PortfolioModule from './components/portfolioModule';
+import StratigesModule from './components/stratigesModule';
 
 function Dashboard() {
     return (
@@ -14,6 +15,7 @@ function Dashboard() {
         <MarginModule/>  
         <YieldModule/> 
         <PortfolioModule/> 
+        <StratigesModule/>
         </div>
     </body>
     );

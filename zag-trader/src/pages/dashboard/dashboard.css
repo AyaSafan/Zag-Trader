@@ -16,7 +16,7 @@ body{
     "top" auto
     "portfolio" auto
     "strategies" auto
-    /* "comps" auto/100%; */
+    "contests" auto/100%; 
 }
 
 @media (min-width: 992px)  {
@@ -31,7 +31,7 @@ body{
             "top top" auto
             "portfolio portfolio" auto
             "strategies strategies" auto
-            /* "comps comps" auto/1fr 1fr; */
+            "contests" auto/1fr 1fr;
     }
 }
 
