@@ -1,0 +1,69 @@
+.banner{
+    grid-area: banner;
+}
+.bannerCard{
+    box-shadow: 0 6px 10px rgb(42 46 54 / 65%);
+    background-image: url('../../../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: #181816;    
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-gap: 14px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.bannerCard-content {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 992px){
+.bannerCard-content{
+    display: block;
+}
+}
+
+.bannerCard-text{
+    margin-bottom: 10px;
+    font-size: 14;
+    color: #fff;
+}
+
+.bannerCard-header{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+}
+@media (min-width: 992px){
+    .bannerCard-header {
+        font-size: 24px;
+    }
+}
+
+
+.linkButton{
+    background-color: #2da36a;
+    color: white;
+    padding: 0 24px;
+    text-align: center;
+    min-height: min-content;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 992px){
+    .linkButton{
+        padding: 10px 24px;
+    }
+}
+    

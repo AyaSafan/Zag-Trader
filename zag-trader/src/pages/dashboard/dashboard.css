@@ -1,0 +1,37 @@
+body{
+    background: rgb(62, 63, 84);
+}
+
+.dashboardGrid{
+    display: grid;
+    grid-gap: 14px;
+    padding: 80px 15px 5px;
+
+    grid-template:
+    "banner" auto
+    "funds" auto
+    "wallet" auto
+    "margin" auto
+    "yield" auto
+    "cov-top" auto
+    "cov-portfolio" auto
+    "cov-strategies" auto
+    /* "comps" auto/100%; */
+}
+
+@media (min-width: 992px)  {
+    .dashboardGrid{
+        padding: 80px 15px 5px 80px;
+
+        grid-template:
+            "funds banner" auto
+            "wallet wallet" auto
+            "margin margin" auto
+            "yield yield" auto
+            "cov-top cov-top" auto
+            "cov-portfolio cov-portfolio" auto
+            "cov-strategies cov-strategies" auto
+            /* "comps comps" auto/1fr 1fr; */
+    }
+}
+

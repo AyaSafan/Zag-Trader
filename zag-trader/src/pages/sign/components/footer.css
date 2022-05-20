@@ -1,0 +1,20 @@
+.ssl , .amazon{
+    bottom: 30px;
+    display: none;
+    height: 54px;
+    position: fixed;
+    width: 114px;
+}
+
+.ssl {
+    right: 240px;
+}
+.amazon {
+    right: 100px;
+}
+
+@media (min-width: 992px){
+    .ssl,.amazon {
+        display: block;
+    }
+}

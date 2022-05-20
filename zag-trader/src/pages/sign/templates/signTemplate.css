@@ -1,0 +1,91 @@
+.zagBacground {
+    background-color: #010306;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+
+
+.sign-template-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem 0.5rem 0;
+    position: relative;
+} 
+
+
+.sign-template-content{
+    max-width: 23rem;
+    width: 100%;
+}
+  
+
+@media (min-width: 768px){
+    .zagBacground {
+        background: url('../../../assets/bg.jpg');
+    }  
+      .sign-template-container{
+        padding-top: 10rem;
+      }
+      
+}
+
+@media (min-width: 992px){
+.sign-template-container {
+    display: block;
+    padding-left: 4.688rem;
+    padding-top: 10rem;
+}
+}
+
+
+@media (min-width: 768px){
+    .sign-template-card{
+        border: 0.5px solid rgba(196,196,196,.6);
+        border-radius: 10px;
+    }
+}
+.sign-template-card{
+    width: 320px;
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0px 20px;
+}
+
+.sign-template-card-header{
+    color: #fff;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 1.5rem 20px;
+    position: relative;
+    text-align: center;
+}
+.sign-template-text {
+    color: #bbc4c9;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+.link{
+    color: #48a6eb;
+    text-decoration: none;
+}
+
+
+
+   

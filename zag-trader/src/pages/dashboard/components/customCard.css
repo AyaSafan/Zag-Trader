@@ -1,0 +1,50 @@
+.customCard{
+    box-shadow: 0 6px 10px rgb(42 46 54 / 65%);
+    background: #2b2b3c;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-gap: 14px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.customCard-header{
+    font-size: 16px;
+    color: rgba(187, 196, 201, .85);
+    line-height: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 992px){
+.customCard-header {
+    font-size: 20px;
+}
+}
+
+.customCard-header-title{
+ display: flex;
+ align-items:center;
+}
+
+.customCard-header-title:hover{
+    cursor: pointer;
+}
+
+.customCard-header-summery{
+    color: #83838d;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.customCard-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: -10px;
+}
