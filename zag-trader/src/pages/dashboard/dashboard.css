@@ -5,7 +5,7 @@ body{
 .dashboardGrid{
     display: grid;
     grid-gap: 14px;
-    padding: 80px 15px 5px;
+    padding: 80px 15px 30px;
 
     grid-template:
     "banner" auto
@@ -16,12 +16,12 @@ body{
     "top" auto
     "portfolio" auto
     "strategies" auto
-    "contests" auto/100%; 
+    "contests" auto; 
 }
 
 @media (min-width: 992px)  {
     .dashboardGrid{
-        padding: 80px 15px 5px 80px;
+        padding: 80px 15px 30px 80px;
 
         grid-template:
             "funds banner" auto
@@ -31,7 +31,7 @@ body{
             "top top" auto
             "portfolio portfolio" auto
             "strategies strategies" auto
-            "contests" auto/1fr 1fr;
+            "contests contests" auto;
     }
 }
 
