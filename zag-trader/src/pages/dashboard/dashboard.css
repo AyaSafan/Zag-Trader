@@ -35,3 +35,42 @@ body{
     }
 }
 
+.mainmenu{
+    position: fixed;
+    height: 56px;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: #2b2b3c;
+    /* border-top: 1px solid #303142;
+    border-bottom: 1px solid #303142; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #83838d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  li a:hover {
+   cursor: pointer;
+  }
+  .active {
+    color: #fff;
+  }
