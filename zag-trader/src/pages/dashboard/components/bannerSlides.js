@@ -3,8 +3,6 @@ import Banner from "./banner";
 import { useEffect } from "react";
 
 function BannerSlide() {
-  
-
   useEffect(() => {
     let slideIndex = 0;
     let timer;
@@ -19,7 +17,7 @@ function BannerSlide() {
       if (slideIndex > slides.length) {
         slideIndex = 1;
       }
-  
+
       slides[slideIndex - 1].style.display = "block";
       timer = setTimeout(showSlides, 3000);
     }

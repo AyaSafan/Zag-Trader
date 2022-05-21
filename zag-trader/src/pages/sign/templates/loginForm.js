@@ -3,8 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 
 import CustomInput from "../components/customInput";
 import CustomButtonPrimary from "../../components/customPrimaryButton";
+import { useEffect } from "react";
 
 function LoginForm() {
+
+  useEffect(() => {
+    document.title = 'sign-in';
+  });
+
   const navigate = useNavigate();
   const [inputs, setInputs] = useState({ email: "", password: "" });
   const [showError, setShowError] = useState(false);

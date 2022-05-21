@@ -6,6 +6,11 @@ import CustomInput from "../components/customInput";
 import CustomButton from "../../components/customPrimaryButton";
 
 function RegisterForm() {
+
+  useEffect(() => {
+    document.title = 'sign-in';
+  });
+
   const navigate = useNavigate();
   const [inputs, setInputs] = useState({
     email: "",

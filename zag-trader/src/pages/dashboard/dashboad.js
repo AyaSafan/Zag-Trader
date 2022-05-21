@@ -11,8 +11,13 @@ import SideBar from "./components/sideBar";
 
 import Modal from "./components/modal";
 import BannerSlide from "./components/bannerSlides";
+import { useEffect } from "react";
 
 function Dashboard() {
+  useEffect(() => {
+    document.title = "Dashboard";
+  });
+
   return (
     <div>
       <Modal />
