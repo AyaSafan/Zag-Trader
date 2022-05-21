@@ -1,4 +1,8 @@
-body{
+:root {
+   --sidebarwidth: 100px
+}
+
+  body{
     background: rgb(62, 63, 84);
 }
 
@@ -6,6 +10,7 @@ body{
     display: grid;
     grid-gap: 14px;
     padding: 100px 15px 30px;
+
 
     grid-template:
     "banner" auto
@@ -22,6 +27,7 @@ body{
 @media (min-width: 992px)  {
     .dashboardGrid{
         padding: 80px 15px 30px 80px;
+        padding-left: var(--sidebarwidth);
 
         grid-template:
             "funds banner" auto
