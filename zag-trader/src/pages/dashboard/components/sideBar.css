@@ -48,6 +48,7 @@
     .mobile-nav2{
         display: flex;
         position: fixed;
+        z-index: 3;
         top: 46px;
         right: 0;
         left: 0;

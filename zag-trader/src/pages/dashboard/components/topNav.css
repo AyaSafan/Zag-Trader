@@ -1,6 +1,7 @@
 
 .mainmenu{
     position: fixed;
+    z-index: 3;
     height: 56px;
     left: 0;
     right: 0;
@@ -67,7 +68,7 @@ ul li a {
     font-weight: 500;
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
   
 ul li a:hover {
@@ -99,6 +100,7 @@ ul li a:hover {
     }
     .mobile-nav{
         display: flex;
+        z-index: 3;
         position: fixed;
         bottom: 0;
         right: 0;
