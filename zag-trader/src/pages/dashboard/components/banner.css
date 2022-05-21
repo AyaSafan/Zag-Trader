@@ -23,7 +23,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     position: relative;
-    z-index: 2;
 }
 
 @media (min-width: 992px){

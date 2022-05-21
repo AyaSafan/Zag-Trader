@@ -10,11 +10,12 @@ import ContestsModule from './components/contestsModule';
 import TopNav from './components/topNav';
 import SideBar from './components/sideBar';
 
-
+import Modal from './components/modal';
 
 function Dashboard() {
     return (
     <body>
+        <Modal/>
         <div>
             <TopNav/>            
             <SideBar/>
