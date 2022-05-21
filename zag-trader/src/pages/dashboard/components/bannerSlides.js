@@ -3,25 +3,30 @@ import Banner from "./banner";
 import { useEffect } from "react";
 
 function BannerSlide() {
-  let slideIndex = 0;
+  
 
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  useEffect(() => {
+    let slideIndex = 0;
+    let timer;
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      timer = setTimeout(showSlides, 3000);
     }
-    console.log(slideIndex);
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
 
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000);
-  }
-
-  useEffect(() => showSlides());
+    showSlides();
+    return () => clearTimeout(timer);
+  }, []);
 
   const banners = [
     {
@@ -37,6 +42,13 @@ function BannerSlide() {
       text: "& profit together!",
       button: "Join",
       pic: "https://primexbt.com/my/assets/banners/referral@2x.png",
+    },
+    {
+      key: 3,
+      header: "Stack crypto",
+      text: "& earn extra!",
+      button: "Join",
+      pic: "	https://primexbt.com/my/assets/banners/yield@3x.png",
     },
   ];
 
