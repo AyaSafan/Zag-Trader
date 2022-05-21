@@ -1,21 +1,18 @@
 import './banner.css'
 import {Link } from "react-router-dom";
 
-function Banner(){
+function Banner(props){
     return(
-        <div className='banner'>
-        <div className='bannerCard'>
+        <div className='bannerCard' style={{ backgroundImage: `url(${props.pic})`}}>
             <div className='bannerCard-content'>
                <div className='bannerCard-text'>
-               <label className='bannerCard-header'>Copy The Best Traders</label>
-               <div>&amp; profit together!</div> 
+               <label className='bannerCard-header'>{props.header}</label>
+               <div> {props.text}</div> 
                </div>
-                <Link to="/dashboard" className="linkButton">Join</Link>
+                <Link to="/dashboard" className="linkButton">{props.button}</Link>
             </div>
 
-        </div>
-       </div>
-        
+        </div>       
     );
 }
 

@@ -1,9 +1,9 @@
 .banner{
     grid-area: banner;
+    min-width: 300px;
 }
 .bannerCard{
     box-shadow: 0 6px 10px rgb(42 46 54 / 65%);
-    background-image: url('../../../assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -20,6 +20,7 @@
 .bannerCard-content {
     align-items: center;
     display: flex;
+    flex: 1;
     flex-flow: row nowrap;
     justify-content: space-between;
     position: relative;
