@@ -9,6 +9,7 @@ function YieldModule(){
             <ModuleTemplate 
             icon={<FaArtstation  size={24}/>} 
             title='Yield Control' 
+            summery = '0'
             button={<CustomSecondaryButton> <FaPlus size={14}/> <span className="btn-fold">Start earning</span></CustomSecondaryButton>}
             onboardingTitle ='Earn up to 14% interest!'
             onboardingTagline ='Start earning high returns on your crypto with Covesting Yield Account.'

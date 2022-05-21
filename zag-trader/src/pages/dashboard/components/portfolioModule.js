@@ -9,6 +9,7 @@ function PortfolioModule(){
             <ModuleTemplate 
             icon={<FaCreativeCommonsSa size={24}/>} 
             title='Copy-trading | Portfolio ' 
+            summery = '0'
             button={<CustomSecondaryButton> <FaPlus size={14}/> <span className="btn-fold">Open new following</span> </CustomSecondaryButton>}
             onboardingTitle ='Make profits with top traders!'
             onboardingTagline ='Covesting Copy-trading Module allows you to automatically copy the trades of the best performing traders'

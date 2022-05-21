@@ -9,6 +9,7 @@ function StratigesModule(){
             <ModuleTemplate 
             icon={<FaCreativeCommonsSa size={24}/>} 
             title='Copy-trading | My Strategies ' 
+            summery = '0'
             button={<CustomSecondaryButton> <FaPlus size={14}/><span className="btn-fold"> Open new stratgy</span></CustomSecondaryButton>}
             onboardingTitle ='Earn additional income!'
             onboardingTagline ='Start your own Covesting Copy-trading Strategy and earn success fees from profitable trading'

@@ -19,6 +19,7 @@ function MarginModule(){
             <ModuleTemplate 
             icon={<FaChartBar size={24}/>} 
             title='Margin Trading' 
+            summery = '0'
             button={<CustomSecondaryButton> <FaPlus size={14}/> <span className="btn-fold"> Open new account</span></CustomSecondaryButton>}
             onboardingTitle ='Open new Margin account!'
             onboardingTagline ='You can open additional Margin accounts USDC, ETH, USDT in  and other currencies'
