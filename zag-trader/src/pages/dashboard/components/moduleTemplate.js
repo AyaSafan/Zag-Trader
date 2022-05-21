@@ -19,7 +19,7 @@ function ModuleTemplate(props){
         <CustomCard>
             <div className='customCard-header' > 
                 <div className='customCard-header-title' onClick={handleClick}> {props.icon} &nbsp; &nbsp; <span> {props.title}</span> &nbsp; {show? <FaAngleDown size={24}/> : <FaAngleUp size={24}/>}  </div>
-                {props.summery ? <div className='customCard-header-summery'> <div>Total equity</div> <div style={{color:'#fff'}}>≈ 0 USD</div></div>: <div></div>}
+                {props.summery ? <div className='customCard-header-summery'> <div>Total equity</div> <div style={{color:'#fff'}}>≈ {props.summery} USD</div></div>: <div></div>}
                 <div className='customCard-header-action'>{show && props.button}</div>
             </div>
             {show && props.children}
