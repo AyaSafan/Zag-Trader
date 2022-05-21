@@ -10,7 +10,7 @@ function ModuleTemplate(props){
 
     const handleClick = e => {
         /*e.preventDefault();*/
-        setShow(!show);
+        setShow((prev)=>!prev);
     }
 
            

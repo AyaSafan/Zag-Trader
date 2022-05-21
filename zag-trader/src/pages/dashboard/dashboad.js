@@ -14,7 +14,7 @@ import BannerSlide from './components/bannerSlides';
 
 function Dashboard() {
     return (
-    <body>
+    <div>
         <Modal/>
         <div>
             <TopNav/>            
@@ -31,7 +31,7 @@ function Dashboard() {
             <ContestsModule/>
             </div>
         </div>
-    </body>
+    </div>
     );
 }
 

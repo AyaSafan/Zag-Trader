@@ -22,7 +22,7 @@ function TopNav(){
                 </div>
                 <nav className='mainmenu-nav'>
                     <ul>
-                        <li><a class="active" href="/"><FaHome size={24}/> &nbsp; Main</a></li>
+                        <li><a className="active" href="/"><FaHome size={24}/> &nbsp; Main</a></li>
                         <li><a href="/"><FaChartBar size={24}/> &nbsp;Margin</a></li>
                         <li><a href="/"><FaBitcoin size={24}/> &nbsp;Buy crypto</a></li>
                         <li><a href="/"><FaArtstation size={24}/> &nbsp;Yield</a></li>
@@ -36,7 +36,7 @@ function TopNav(){
             </div>
             <nav className='mobile-nav'>
                     <ul>
-                        <li><a class="active" href="/"><div><FaHome size={24}/><div>Main</div></div></a></li>
+                        <li><a className="active" href="/"><div><FaHome size={24}/><div>Main</div></div></a></li>
                         <li><a href="/"><div><FaChartBar size={24}/><div>Margin</div></div></a></li>
                         <li><a href="/"><div><FaBitcoin size={24}/><div> Buy crypto</div></div></a></li>
                         <li><a href="/"><div><FaCreativeCommonsSa size={24}/> <div>Copy-trading</div></div></a></li>

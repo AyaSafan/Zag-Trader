@@ -8,7 +8,7 @@ function SideBar(){
     
     const handleClick = e => {
         e.preventDefault();
-        setFold(!fold);
+        setFold((prev)=>!prev);
         document.documentElement.style.setProperty('--sidebarwidth', fold? '215px': '100px');
     }
 

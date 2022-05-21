@@ -9,13 +9,13 @@ function Modal(){
     }
     return(
         <>{show &&
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <span class="close" onClick={handleClick}>&times;</span>
+            <div id="myModal" className="modal">
+                <div className="modal-content">
+                    <div className="modal-header">
+                    <span className="close" onClick={handleClick}>&times;</span>
                     <h2>Fund your account</h2>
                     </div>
-                    <div class="modal-body">
+                    <div className="modal-body">
                     <h2>Make a deposit and start trading!</h2>
                     <img src='https://primexbt.com/my/assets/guide/deposit.png?v2' alt='modal-pic'></img>
                     <p>To start trading with leverage and access all the platform's features, you will first need to make a deposit to your personal Wallet.</p>

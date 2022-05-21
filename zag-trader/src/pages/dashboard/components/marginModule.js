@@ -27,6 +27,7 @@ function MarginModule(){
             pic='https://primexbt.com/my/margin-mobile.142711b20ff9c98d.svg'
             >
                 <table>
+                <tbody>
                 <tr>
                     <th>Account</th>
                     <th>Equity</th>
@@ -34,7 +35,7 @@ function MarginModule(){
                     <th className="td-fold">Available margin, % </th>
                     <th className="td-fold">Info</th>
                 </tr>
-                {accounts.map((accountItem)=>  <tr>
+                {accounts.map((accountItem)=>  <tr key={accountItem.currency}>
                     <td>
                         <div className="td-currency-label">
                             <img src={accountItem.currencyIcon} alt='icon'></img> &nbsp; &nbsp;<span>{accountItem.currency}</span>
@@ -61,6 +62,7 @@ function MarginModule(){
                 </tr>
                 )}
 
+                </tbody>
                 </table>
             </ModuleTemplate>
         </div>
