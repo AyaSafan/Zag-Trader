@@ -1,48 +1,48 @@
-.onboardingBanner{
+.onboardingBanner {
     align-items: center;
-    border-radius:8px;
-    background: linear-gradient(90deg,#1d1329 0%,#1e1429 20%,#0c0b29 100%);
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1d1329 0%, #1e1429 20%, #0c0b29 100%);
     color: #fff;
     cursor: pointer;
     overflow: hidden;
     position: relative;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .onboardingBanner {
-    display: grid;
-    grid-template-columns: minmax(auto,1fr) auto minmax(auto,1fr);
-    grid-gap: 10px;
-    height: 100px;
-}
+        display: grid;
+        grid-template-columns: minmax(auto, 1fr) auto minmax(auto, 1fr);
+        grid-gap: 10px;
+        height: 100px;
+    }
 }
 
-.onboardingBanner-close{
+.onboardingBanner-close {
     position: absolute;
     top: 10px;
     right: 10px
-  }
+}
 
- 
+
 .onboardingBanner-pic {
     background-size: contain !important;
     height: 68px;
     width: 161px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .onboardingBanner-pic {
         height: 100px;
         width: 219px;
         background-size: cover !important;
     }
-  }
+}
 
 
-.onboardingBanner-message{
+.onboardingBanner-message {
     position: relative;
     grid-column-start: 2;
     padding: 0 15px;
@@ -50,54 +50,54 @@
 
 
 
-.onboardingBanner-message h2{
+.onboardingBanner-message h2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    
+
 }
 
-.onboardingBanner-message h5{
+.onboardingBanner-message h5 {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     margin: 6px 0 24px;
 }
 
-@media (min-width: 768px){
-    .onboardingBanner-message{
+@media (min-width: 768px) {
+    .onboardingBanner-message {
         text-align: center;
     }
-     
-    .onboardingBanner-message h2{
-        margin: 0; 
+
+    .onboardingBanner-message h2 {
+        margin: 0;
         font-size: 24px;
         line-height: 30px;
         font-weight: 400;
-        
+
     }
-    
-    .onboardingBanner-message h5{
-        margin: 0; 
+
+    .onboardingBanner-message h5 {
+        margin: 0;
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
     }
-    
+
 }
 
-.onboardingBanner-actionButton{
+.onboardingBanner-actionButton {
     text-align: right;
     padding: 14px;
 }
 
-@media (min-width: 768px){
-    .onboardingBanner-actionButton{
+@media (min-width: 768px) {
+    .onboardingBanner-actionButton {
         padding-right: 50px;
-    } 
+    }
 }
 
-table{
+table {
     color: #83838d;
     font-size: 12px;
     line-height: 18px;
@@ -106,31 +106,34 @@ table{
 }
 
 
-tr{
+tr {
     height: 36px;
     text-align: right;
-    border-top: 1px solid rgba(255,255,255,.12);
+    border-top: 1px solid rgba(255, 255, 255, .12);
     border-bottom: 0 none transparent;
 }
+
 tr:not(:first-child):hover {
     cursor: pointer;
-    background-color: rgba(128,128,128,.12);
+    background-color: rgba(128, 128, 128, .12);
 }
 
-th{
+th {
     text-align: right;
     font-weight: 400;
     padding: 8px 10px;
 }
 
-td{
+td {
     padding: 8px 10px;
 }
 
-th:nth-child(1) , td:nth-child(1){
-    text-align: left; 
+th:nth-child(1),
+td:nth-child(1) {
+    text-align: left;
 }
-.td-currency-label{
+
+.td-currency-label {
     display: flex;
     align-items: center;
     color: #fff;
@@ -138,17 +141,17 @@ th:nth-child(1) , td:nth-child(1){
     font-size: 14px;
 }
 
-.td-currency-unit{
+.td-currency-unit {
     color: #fff;
     font-weight: 500;
     font-size: 14px;
 }
 
-.td-currency-actions{
+.td-currency-actions {
     width: 1px;
 }
 
-.div-currency-actions{
+.div-currency-actions {
     flex-grow: 0;
     display: grid;
     grid-auto-flow: column;
@@ -157,12 +160,13 @@ th:nth-child(1) , td:nth-child(1){
 }
 
 
-@media (max-width: 768px){
-    .td-fold{
+@media (max-width: 768px) {
+    .td-fold {
         display: none;
     }
-    .btn-fold{
+
+    .btn-fold {
         display: none;
     }
-    
+
 }

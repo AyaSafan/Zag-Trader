@@ -1,46 +1,27 @@
 :root {
-   --sidebarwidth: 100px
+    --sidebarwidth: 100px
 }
 
-  body{
+body {
     background: rgb(62, 63, 84);
 }
 
-.dashboardGrid{
+.dashboardGrid {
     display: grid;
     grid-gap: 14px;
     padding: 100px 15px 30px;
 
 
     grid-template:
-    "banner" auto
-    "funds" auto
-    "wallet" auto
-    "margin" auto
-    "yield" auto
-    "top" auto
-    "portfolio" auto
-    "strategies" auto
-    "contests" auto; 
+        "banner"auto "funds"auto "wallet"auto "margin"auto "yield"auto "top"auto "portfolio"auto "strategies"auto "contests"auto;
 }
 
-@media (min-width: 992px)  {
-    .dashboardGrid{
+@media (min-width: 992px) {
+    .dashboardGrid {
         padding: 80px 15px 30px 80px;
         padding-left: var(--sidebarwidth);
 
         grid-template:
-            "funds banner" auto
-            "wallet wallet" auto
-            "margin margin" auto
-            "yield yield" auto
-            "top top" auto
-            "portfolio portfolio" auto
-            "strategies strategies" auto
-            "contests contests" auto;
+            "funds banner"auto "wallet wallet"auto "margin margin"auto "yield yield"auto "top top"auto "portfolio portfolio"auto "strategies strategies"auto "contests contests"auto;
     }
 }
-
-
-
-

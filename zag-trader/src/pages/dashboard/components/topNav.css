@@ -1,5 +1,4 @@
-
-.mainmenu{
+.mainmenu {
     position: fixed;
     z-index: 3;
     height: 56px;
@@ -8,23 +7,24 @@
     display: flex;
     background: #2b2b3c;
     border-top: 1px solid #303142;
-    border-bottom: 1px solid #303142; 
+    border-bottom: 1px solid #303142;
 }
 
 
-.mainmenu-logo{
+.mainmenu-logo {
     display: flex;
     align-items: center;
 }
 
- .mainmenu-summery{
+.mainmenu-summery {
     color: #83838d;
     font-size: 12px;
     font-weight: 500;
     padding-left: 10px;
 }
 
-.mainmenu-logo-link, .more-link{
+.mainmenu-logo-link,
+.more-link {
     color: #83838d;
     display: flex;
     align-items: center;
@@ -42,8 +42,8 @@
     padding: 0 7px;
 }
 
-.mainmenu-nav{
-    flex:1
+.mainmenu-nav {
+    flex: 1
 }
 
 ul {
@@ -51,12 +51,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  
-ul  li {
+}
+
+ul li {
     float: left;
-  }
-  
+}
+
 ul li a {
     display: block;
     color: #83838d;
@@ -69,36 +69,45 @@ ul li a {
 
     display: flex;
     align-items: center;
-  }
-  
+}
+
 ul li a:hover {
-   cursor: pointer;
-  }
+    cursor: pointer;
+}
 
 
-.mobile-nav , .mobile-mainmenu-summery{
+.mobile-nav,
+.mobile-mainmenu-summery {
     display: none;
 }
-@media (min-width: 992px){
-    .mainmenu-logo{
+
+@media (min-width: 992px) {
+    .mainmenu-logo {
         min-width: 200px;
     }
 }
-@media (max-width: 992px){
-    .mainmenu-nav, .more-link, .mainmenu-summery{
-       display: none;
-    } 
-    .mainmenu{
+
+@media (max-width: 992px) {
+
+    .mainmenu-nav,
+    .more-link,
+    .mainmenu-summery {
+        display: none;
+    }
+
+    .mainmenu {
         height: 46px;
     }
-    .mobile-mainmenu-summery{
+
+    .mobile-mainmenu-summery {
         display: block;
         color: #83838d;
         font-size: 14px;
         font-weight: 500;
         padding-left: 10px;
     }
-    .mobile-nav{
+
+    .mobile-nav {
         display: flex;
         z-index: 3;
         position: fixed;
@@ -108,10 +117,11 @@ ul li a:hover {
         background: #21212e;
         width: 100%;
     }
-    .mobile-nav ul{
+
+    .mobile-nav ul {
         width: 100%;
         display: flex;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         list-style-type: none;
     }
 
@@ -119,4 +129,4 @@ ul li a:hover {
 
 .active {
     color: #fff !important;
-  }
+}

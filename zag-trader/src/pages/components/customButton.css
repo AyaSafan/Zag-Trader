@@ -1,8 +1,8 @@
-.customButton{
+.customButton {
     border-radius: 8px;
 
     color: #fff;
-    font-weight:600;
+    font-weight: 600;
     font-size: 1rem;
     vertical-align: middle;
     text-align: center;
@@ -12,18 +12,20 @@
     cursor: pointer;
     padding: 0px 18px;
 }
-.customPrimaryButton{
+
+.customPrimaryButton {
     background-color: #48a6eb;
     border: 0;
 }
 
-.customSecondaryButton{
+.customSecondaryButton {
     background-color: transparent;
     border: 1px solid #83838d;
     font-weight: 400;
 }
-.customPrimaryButton:disabled{
-    background-color: rgba(255,255,255,.12);
-    color: rgba(255,255,255,.3);
+
+.customPrimaryButton:disabled {
+    background-color: rgba(255, 255, 255, .12);
+    color: rgba(255, 255, 255, .3);
     cursor: default;
 }

@@ -1,4 +1,4 @@
-.customCard{
+.customCard {
     box-shadow: 0 6px 10px rgb(42 46 54 / 65%);
     background: #2b2b3c;
     border-radius: 12px;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.customCard-header{
+.customCard-header {
     font-size: 16px;
     color: rgba(187, 196, 201, .85);
     line-height: 20px;
@@ -19,37 +19,39 @@
     justify-content: space-between;
     align-items: center; */
     display: grid;
-    grid-template: "header action" auto/minmax(auto,1fr) minmax(auto,1fr);
+    grid-template: "header action"auto/minmax(auto, 1fr) minmax(auto, 1fr);
 }
-@media (min-width: 768px){
-    .customCard-header{
-        grid-template: "title summary action" auto/minmax(auto,1fr) auto minmax(auto,1fr);
+
+@media (min-width: 768px) {
+    .customCard-header {
+        grid-template: "title summary action"auto/minmax(auto, 1fr) auto minmax(auto, 1fr);
     }
 }
 
-.customCard-header:hover{
+.customCard-header:hover {
     color: #fff;
 }
 
-@media (min-width: 992px){
-.customCard-header {
-    font-size: 20px;
-}
+@media (min-width: 992px) {
+    .customCard-header {
+        font-size: 20px;
+    }
 }
 
-.customCard-header-title{
- display: flex;
- align-self:center;
+.customCard-header-title {
+    display: flex;
+    align-self: center;
 }
-.customCard-header-title span{
+
+.customCard-header-title span {
     height: min-content;
 }
 
-.customCard-header-title:hover{
+.customCard-header-title:hover {
     cursor: pointer;
 }
 
-.customCard-header-summery{
+.customCard-header-summery {
     color: #83838d;
     font-size: 14px;
     line-height: 20px;
@@ -57,18 +59,18 @@
     display: none;
 }
 
-@media (min-width: 768px){
-    .customCard-header-summery{
-       display: block;
+@media (min-width: 768px) {
+    .customCard-header-summery {
+        display: block;
     }
 }
 
-.customCard-header-action{
+.customCard-header-action {
     display: flex;
     justify-content: flex-end;
 }
 
-.customCard-content{
+.customCard-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;

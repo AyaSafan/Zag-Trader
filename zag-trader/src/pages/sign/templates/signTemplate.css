@@ -12,55 +12,57 @@
 }
 
 
-.sign-template-container{
+.sign-template-container {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 1.5rem 0.5rem 0;
     position: relative;
-} 
+}
 
 
-.sign-template-content{
+.sign-template-content {
     max-width: 23rem;
     width: 100%;
 }
-  
 
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .zagBacground {
         background: url('../../../assets/bg.jpg');
-    }  
-      .sign-template-container{
+    }
+
+    .sign-template-container {
         padding-top: 10rem;
-      }
-      
+    }
+
 }
 
-@media (min-width: 992px){
-.sign-template-container {
-    display: block;
-    padding-left: 4.688rem;
-    padding-top: 10rem;
-}
+@media (min-width: 992px) {
+    .sign-template-container {
+        display: block;
+        padding-left: 4.688rem;
+        padding-top: 10rem;
+    }
 }
 
 
-@media (min-width: 768px){
-    .sign-template-card{
-        border: 0.5px solid rgba(196,196,196,.6);
+@media (min-width: 768px) {
+    .sign-template-card {
+        border: 0.5px solid rgba(196, 196, 196, .6);
         border-radius: 10px;
     }
 }
-.sign-template-card{
+
+.sign-template-card {
     width: 320px;
     display: block;
     background-color: rgba(0, 0, 0, .5);
     padding: 0px 20px;
 }
 
-.sign-template-card-header{
+.sign-template-card-header {
     color: #fff;
     align-items: center;
     display: flex;
@@ -72,6 +74,7 @@
     position: relative;
     text-align: center;
 }
+
 .sign-template-text {
     color: #bbc4c9;
     font-size: 14px;
@@ -81,11 +84,7 @@
 }
 
 
-.link{
+.link {
     color: #48a6eb;
     text-decoration: none;
 }
-
-
-
-   
