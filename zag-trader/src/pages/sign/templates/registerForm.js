@@ -18,11 +18,13 @@ function RegisterForm() {
     policyChecked: false,
   });
   const [enabledSubmit, setEnabledSubmit] = useState(false);
+  const [errors, setErrors] = useState({email: false, password: false});
 
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
+    setErrors((values) => ({ ...values, [name]: value.length === 0 }));
   };
 
   const handleCheck = (event) => {
@@ -36,6 +38,8 @@ function RegisterForm() {
       inputs.email !== "" && inputs.password !== "" && inputs.policyChecked
     );
   }, [inputs]);
+
+  // useEffect(() => {setErrors({email: false, password: false})}, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -56,13 +60,19 @@ function RegisterForm() {
         name="email"
         placeholder="Email *"
         onChange={handleChange}
+        error={errors['email']}
+        errorMsg =' Email is required'
       />
+      <br/>
       <CustomInput
         type="password"
         name="password"
         placeholder="Password *"
         onChange={handleChange}
+        error={errors['password']}
+        errorMsg =' Password is required'
       />
+      <br/>
       <PolicyCheck onChange={handleCheck} />
       <div style={{ display: "flex", flexDirection: "column" }}>
         <CustomButton type="submit" disabled={!enabledSubmit}>
