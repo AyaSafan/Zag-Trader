@@ -1,5 +1,6 @@
 import "./customInput.css";
 
+
 function CustomInput(props) {
 
   return (
@@ -9,7 +10,7 @@ function CustomInput(props) {
       className={props.error? "form-input form-input-error": "form-input"}
       type={props.type}
       name={props.name}
-      onChange={e => { props.onChange(e)}}
+      onChange={props.onChange}
       onFocus={e => e.target.parentElement.classList.add('focused')}
       onBlur={e=> e.target.parentElement.classList.remove('focused')}
     />
