@@ -1,7 +1,18 @@
 import "./customInput.css";
 
-
 function CustomInput(props) {
+
+  function animateLabel(e){
+    e.target.parentElement.classList.add('focused');
+    
+      var inputValue = e.target.value;
+      if ( inputValue === "" ) {
+        e.target.parentElement.classList.remove('focused');  
+      } 
+
+    console.log('animaet')
+
+  }
 
   return (
     <div className="form-group">
@@ -12,7 +23,7 @@ function CustomInput(props) {
       name={props.name}
       onChange={props.onChange}
       onFocus={e => e.target.parentElement.classList.add('focused')}
-      onBlur={e=> e.target.parentElement.classList.remove('focused')}
+      onBlur={e=> animateLabel(e)}
     />
     <div className="error-div">
       <label className="error-msg">{ props.error && props.errorMsg}</label>

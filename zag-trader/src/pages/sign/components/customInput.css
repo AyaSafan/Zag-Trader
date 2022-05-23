@@ -6,6 +6,7 @@
     position: absolute;
     left: 10px;
     top: 15px;
+    padding: 0 5px;
     color: rgba(255, 255, 255, .7);
     background-color: #000;
     z-index: 10;
@@ -15,6 +16,11 @@
   .focused .form-label {
     transform: translateY(-150%);
     font-size: .75em;
+    color: #48a6eb;
+  }
+
+  .focused .form-label-error , .form-label-error{
+      color: red;
   }
   
   .form-input {
@@ -41,14 +47,15 @@
     border: 1px solid #fff;
 }
 
+.focused .form-input {
+    border: 1px solid #48a6eb;
+    outline: none;
+}
+
 
 .form-input-error, .form-input-error:hover, .form-input-error:focus{
     outline: none;
-    border: 1px solid red;
-    color: red;
-}
-
-.form-label-error {
+    border: 1px solid red !important;
     color: red;
 }
 
